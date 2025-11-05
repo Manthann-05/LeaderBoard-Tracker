@@ -1,0 +1,75 @@
+.curtain-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #1a0a0a; /* A very dark background for contrast */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  /* Gradient from transparent center to deep red edges for smooth fade */
+  background: linear-gradient(
+    90deg,
+    transparent 40%,
+    #b22222 70%,
+    #7a1212 100%
+  );
+  z-index: 10;
+}
+
+.curtain.right {
+  right: 0;
+  /* reverse gradient direction for right curtain */
+  background: linear-gradient(
+    270deg,
+    transparent 40%,
+    #b22222 70%,
+    #7a1212 100%
+  );
+}
+
+.curtain.left {
+  left: 0;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.95);
+  z-index: 5;
+  color: white;
+}
+
+.main-heading {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px #b22222;
+}
+
+.start-btn {
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  color: #4a2e00; /* dark text for contrast */
+  background-color: #ffc107; /* bright gold */
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ffc107aa;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: 700;
+}
+
+.start-btn:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
