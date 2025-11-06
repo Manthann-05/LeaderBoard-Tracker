@@ -54,30 +54,31 @@ Experience a real-time competitive edge with a leaderboard system engineered for
 
 </div>
 
-## ⚡ Quick Start
+# ⚡ Quick Start
 
-### Prerequisites
+## 🧩 Prerequisites
+- **Node.js** & **npm**
+- **Python 3.x**
 
-Node.js & npm
-Python 3.x
+---
 
-### Installation Steps
+## 🚀 Installation Steps
 
-# Clone the repository
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/Manthann-05/LeaderBoard-Tracker.git
 cd LeaderBoard-Tracker
 
-# Backend setup
 cd backend
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate        # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-python app.py  # Run Python backend server
+python app.py                   # Run Python backend server
 
-# Frontend setup
 cd ../frontend
 npm install
-npm start  # Run React frontend
+npm start                       # Run React frontend
+```
 
 ## 💻 Tech Stack
 
@@ -85,16 +86,41 @@ npm start  # Run React frontend
 |----------------|---------------------|---------------------------------|
 | Frontend       | React + Tailwind CSS | Dynamic UI & responsive design  |
 | Backend        | Python Flask/FastAPI | API and leaderboard logic       |
-| Data Storage   | In-memory / Optional DB | Player and match data persistence |
+| Data Storage   | In-memory Data Storage | Player and match data persistence |
 
-## 🗂️ Project Structure
+## 📁 Project Structure
 
-LeaderBoard-Tracker/
-├── backend/ # Python server & logic
-├── frontend/ # React + Tailwind frontend
-├── docs/ # Documentation & diagrams
-├── tests/ # Unit and integration tests
-├── README.md # This readme file
+```bash
+LeaderBoard_Tracker/
+├── backend/                     # Python backend (Flask or FastAPI logic)
+│   ├── __pycache__/             # Cached Python bytecode
+│   └── main.py                  # Main backend server file
+│
+├── frontend/                    # React + Tailwind frontend
+│   ├── src/
+│   │   ├── assets/              # Images, icons, and static assets
+│   │   ├── components/
+│   │   │   ├── landing-page/
+│   │   │   │   ├── LandingPage.css
+│   │   │   │   └── LandingPage.jsx
+│   │   │   └── tic-tac-toe-game/
+│   │   │       ├── GameBoard.jsx
+│   │   │       ├── Header.jsx
+│   │   │       ├── Leaderboard.jsx
+│   │   │       └── PlayerList.jsx
+│   │   ├── App.jsx
+│   │   ├── GameApp.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── public/
+│   ├── node_modules/
+│   ├── eslint.config.js
+│   └── index.html
+│
+├── images/                      # Screenshots or documentation media
+├── .gitignore                   # Git ignore file
+└── README.md                    # Project documentation
+```
 
 ## 👥 Team
 
@@ -107,17 +133,19 @@ LeaderBoard-Tracker/
 
 ## 📈 Roadmap
 
-- [x] Core leaderboard and player management
-- [x] Match generation & circular queue flow
-- [x] Responsive frontend with React & Tailwind
-- [ ] Integration with live game data feeds
-- [ ] Mobile app support
-- [ ] Advanced analytics & historical stats
-- [ ] Collaborative multiplayer features
+✅ **Core leaderboard and player management**  
+✅ **Match generation & circular queue flow**  
+✅ **Responsive frontend with React & Tailwind**  
+🔄 **Integration with live game data feeds**  
+📱 **Mobile app support**  
+📊 **Advanced analytics & historical stats**  
+🤝 **Collaborative multiplayer features**
+
 
 ## 🤝 Contributing
 
-Contributions welcome via pull requests! Please read CONTRIBUTING.md for guidelines.
+Contributions are welcome!  
+If you'd like to improve this project, feel free to **fork the repository**, make changes, and open a **pull request**.
 
 ## 📞 Contact & Support
 
