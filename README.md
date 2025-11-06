@@ -46,7 +46,10 @@ Experience a real-time competitive edge with a leaderboard system engineered for
 
 <div align="center">
 
-![Leaderboard Interface](https://user-images.githubusercontent.com/yourusername/demo-image.png)  
+![Landing Page](https://github.com/Manthann-05/LeaderBoard-Tracker/blob/main/images/landing-page.png)
+
+![Gameplay Interface](https://github.com/Manthann-05/LeaderBoard-Tracker/blob/main/images/tic-tac-toe-esport-game.png)
+
 <em>Clean gameplay interface with leaderboard and match flow</em>
 
 </div>
